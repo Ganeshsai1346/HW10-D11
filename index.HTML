@@ -15,9 +15,13 @@
             margin-left: auto;
             margin-right: auto;
         }
+        #color {
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
+    <div id="color">
     <h1 id="main-heading">
         Ganesh Computers (Sales & Services)</h1>
     <div id="table">
@@ -80,15 +84,26 @@
     </div>
     <textarea rows="15" cols="40"Please type your message here></textarea>
     <input type="submit" name="submit" value="send">
+    <div id="address">
+        <footer>
+            <p>Ganesh Computers (Sales & Services), 17/311, Chowdarypeta, Gudivada, 521301, AP, India.</p>
+        </footer>
+    </div>
+    
     <script>
         let h1Node = document.getElementById("main-heading")
-        h1Node.textContent = "ghjfwhujkfghjk"
-    
+        h1Node.textContent = "Ganesh Computers Repairs"
+
+        let changePageColorNode = document.getElementById("color")  
+        changePageColorNode.style.backgroundColor = "green"
+
+        let changeFooterAddressNode = document.getElementById("address")
+        changeFooterAddressNode.textContent = "TurnerStrasse 2, Freiberg, 09599, Germany"
+
 
     </script>
+    
 </body>
-<footer>
-    <h3>Ganesh Computers (Sales & Services)</h3>
-    <p>17/311, Chowdarypeta, Gudivada, 521301, AP, India.</p>
-</footer>
+
+</div>
 </html>
